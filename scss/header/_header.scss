@@ -1,0 +1,165 @@
+header {
+   padding: 29px 0 33px 0;
+   @media (max-width: $md1) {
+      padding: 5px 0 5px 0;
+   }
+   .header-top {
+      @include flexbox();
+      justify-content: space-between;
+      @media (max-width: $md1) {
+         justify-content: flex-end;
+         padding-top: 25px;
+      }
+   }
+   .header-top-lang {
+      @include flexbox();
+      @media (max-width: $md1) {
+         margin: 15px 0 15px 0;
+      }
+   }
+   .header-top-lang__item {
+      display: block;
+      padding: 0 4px;
+      margin-right: 10px;
+      line-height: 19px;
+      letter-spacing: 1px;
+      color: #000000;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-family: "Bebas";
+      &.active {
+         background-color: #000000;
+         color: #ffffff;
+      }
+   }
+   .header-top__link {
+      position: relative;
+      z-index: 10;
+      font-family: "Akzidenz";
+      font-size: 15px;
+      color: #000000;
+      text-transform: uppercase;
+      text-decoration: underline;
+      @media (max-width: $md3) {
+         font-size: 13px;
+      }
+   }
+   .header-bottom {
+      @include flexbox();
+      align-items: center;
+      margin-top: -13px;
+      @media (max-width: $md1) {
+         margin-top: -37px;
+      }
+   }
+   .header-bottom-column {
+      flex: 0 0 33.333%;
+   }
+   .header-bottom-menu {
+      &--right {
+         .header-bottom-menu-list {
+            margin: 0;
+            @include flexbox();
+            justify-content: flex-end;
+            text-align: right;
+            li {
+               margin-left: 45px;
+               &:first-child {
+                  margin: 0;
+               }
+               &:last-child {
+                  margin-left: 0;
+               }
+               @media (max-width: $mw) {
+                  margin-left: 20px;
+               }
+            }
+            @media (max-width: $md1) {
+               display: block;
+               text-align: left;
+               li {
+                  margin-bottom: 15px !important;
+                  &:last-child {
+                     margin: 0;
+                  }
+               }
+            }
+         }
+      }
+   }
+   .header-bottom-menu-list {
+      @include flexbox();
+      li {
+         margin-right: 45px;
+         &:last-child {
+            margin-right: 0;
+         }
+         @media (max-width: $mw) {
+            margin-right: 20px;
+         }
+      }
+      @media (max-width: $md1) {
+         display: block;
+         li {
+            margin: 0 0 15px 0 !important;
+            &:last-child {
+               margin: 0;
+            }
+         }
+      }
+   }
+   .header-bottom-menu__link {
+      font-family: "Akzidenz";
+      color: #000000;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-size: 15px;
+   }
+   .header-logo {
+      position: relative;
+      z-index: 10;
+      display: block;
+      text-align: center;
+   }
+   .header-logo__text {
+      display: block;
+      font-family: "Bebas";
+      color: #000000;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+      @media (max-width: $md1) {
+         font-size: 8px;
+      }
+      &.first {
+         @media (max-width: $md1) {
+            margin-bottom: -5px;
+         }
+         @media (max-width: $md3) {
+            margin-bottom: 3px;
+         }
+      }
+      &.second {
+         @media (max-width: $md1) {
+            margin-top: -8px;
+         }
+         @media (max-width: $md3) {
+            margin-top: 0px;
+         }
+      }
+   }
+   .header-logo__image {
+      @media (max-width: $md1) {
+         img {
+            width: 150px;
+         }
+      }
+      @media (max-width: $md3) {
+         img {
+            width: 100px;
+         }
+      }
+   }
+   .header-botom-menu-list {
+   }
+}
